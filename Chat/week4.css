@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.chat-screen {
+  width: 100%;
+  height: 100vh;
+  gap: 10px;
+  display: flex;
+  /* direction: rtl; */
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    50deg,
+    #0d1e70 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.contacts {
+  flex: 1.5;
+  background-image: linear-gradient(
+    50deg,
+    #0d1e70 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  box-shadow: 0 0 10px 0;
+  margin: 50px 50px 50px 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  /* background-color: #3a5bff; */
+  background-image: linear-gradient(
+    46deg,
+    #ffffff 0%,
+    #c850c0 46%,
+    #0d1e70 100%
+  );
+  /* border-bottom: 3px solid #000000; */
+  color: #000;
+  font-size: 1.5rem;
+  padding: 10px;
+  box-shadow: 0 0 10px 0;
+}
+#phoneNum {
+  display: flex;
+  flex-direction: column;
+}
+#phoneNumber {
+  font-size: 0.8rem;
+}
+.contact p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+}
+.contact-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header {
+  display: flex;
+  gap: 0px;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid #00000055;
+  padding-right: 10px;
+}
+
+.add-contact {
+  /* flex: 0.3; */
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.add-contact-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* border: 0px solid #c850c0; */
+}
+.add-contact:hover {
+  transition: 0.3s;
+  transform: rotate(360deg);
+}
+.contact-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  align-self: center;
+}
+.main-chat {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 50px 50px;
+  gap: 20px;
+}
+
+.main-chat div {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.profile .profile-img img {
+  width: 100px;
+  background-color: #c850c0;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px;
+}
+.profile {
+  background-image: linear-gradient(
+    50deg,
+    #0d1e70 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 0;
+  /* background-color: #4158D0; */
+}
+.profile-name {
+  display: flex;
+  flex-direction: column;
+}
+#name {
+  font-size: 2rem;
+}
+#seen-time {
+  font-size: 1rem;
+}
+
+.chat {
+  background-image: url(chatBackground.jpg);
+  background-repeat: repeat;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  /* flex-wrap: wrap; */
+  overflow: hidden;
+  box-shadow: 0 0 10px 0;
+  /* overflow-y: hidden; */
+}
+.chat .massage {
+  margin-bottom: 10px;
+  background-color: #4440;
+  /* max-width: 100px; */
+  /* min-width: auto; */
+}
+.chat .massage span {
+  font-size: 1.3rem;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #14859b;
+  padding: 0.1rem 1rem;
+  border-radius: 30px;
+  /* box-shadow: 0px 0px 5px 1px; */
+}
+
+.inps {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  gap: 10px;
+}
+
+.inps #textbox {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  border: 0;
+  border-radius: 30px;
+  outline: none;
+  font-size: 1.2rem;
+}
+#textbox {
+  width: 100%;
+  box-shadow: 0 0 10px 0;
+}
+.send-btn {
+  flex: 0.2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.add-contact-f {
+  position: absolute;
+  background-color: #000000b5;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.add-contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+  border-radius: 20%;
+
+  font-size: 2rem;
+}
+
+.add-contact-form p input {
+  border: 0;
+  font-size: 1.2rem;
+}
+
+.add-contact-form p {
+  font-family: auto;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.add-contact-content,
+.btn-close {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0px 0px 10px 2px;
+}
+.btn2-addContact {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0px 0px 10px 2px;
+}
+.btn-addContact:hover {
+  transition: 1s;
+  transform: translateY(-5px);
+}
+
+.btn-addContact::before {
+  transition: 1s;
+  transform: translateY(5px);
+}
+
+.btn-animated:hover {
+  transition: 0.5s;
+  transform: translateY(-5px);
+}
+
+.btn-animated:after {
+  transition: 1s;
+  transform: translateY(-5px);
+}

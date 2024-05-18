@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="week4.css">
+
+    <title>Chat</title>
+</head>
+
+<body>
+    <section class="chat-screen">
+        <div class="main-chat">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="user1.png.png" alt="">
+                </div>
+                <div class="profile-name">
+                    <span id="name">Morteza</span>
+                    <span id="seen-time">last seen at 9:00am</span>
+                </div>
+
+            </div>
+
+            <div class="chat">
+
+            </div>
+
+            <div class="inps">
+                <input id="voice-btn" class="send-btn btn-animated" type="image" src="voice.png">
+                <input id="emoji-btn" class="send-btn btn-animated" type="image" src="emoji.png">
+                <input type="text" id="textbox" placeholder="write massage...">
+                <input id="send" class="send-btn btn-animated" type="image" src="send.jpg">
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="header">
+                <button id="back-to-login" class="add-contact">
+                    <img src="back.png" alt="" class="add-contact-content">
+                </button>
+                <span class="contact-text">Contacts</span>
+                <button id="add-contact-form" class="add-contact">
+                    <img src="addContact.png" alt="" class="add-contact-content">
+                </button>
+            </div>
+            <div class="contact">
+                <div id="phoneNum">
+                    <p>Morteza Rahimi</p>
+                    <span id="phoneNumber">phone number: 0915749562</span>
+                </div>
+                <img class="contact-img" src="user1.png.png" alt="">
+            </div>
+
+            <div id="picker"></div>
+        </div>
+
+        <div class="add-contact-f">
+            <div class="add-contact-form">
+                <p>First Name: <input type="text" name="" id="firstName"></p>
+                <p>Last Name: <input type="text" name="" id="lastName"></p>
+                <p>Phone Number:<input type="text" name="" id="phoneNumberinp" placeholder=" 09*********"></p>
+                <div>
+                    <input type="button" value=" Close " class="btn-close">
+                    <input type="button" value=" Add to contacts " class="btn2-addContact">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="https://unpkg.com/picmo@latest/dist/umd/index.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
